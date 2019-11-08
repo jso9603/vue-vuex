@@ -8,11 +8,12 @@ export default class MyModule extends VuexModule {
   pw: string = ''
 
   get getCounter() {
-    return this.counter;
+    return this.counter
   }
 
   @Mutation
   addCount(n: number) {
+    console.log('addCount: ', n)
     this.counter += n
   }
 
